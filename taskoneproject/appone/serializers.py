@@ -4,10 +4,10 @@ from .models import MyData
 
 class myDataSerializer(serializers.Serializer):
 
-    SlackUserName = serializers.CharField()
-    BackEnd = serializers.BooleanField()
-    Age = serializers.IntegerField()
-    Bio = serializers.CharField()
+    slackUsername = serializers.CharField()
+    backend = serializers.BooleanField()
+    age = serializers.IntegerField()
+    bio = serializers.CharField()
 
     class Meta:
         model: MyData

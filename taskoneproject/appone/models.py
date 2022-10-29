@@ -4,10 +4,10 @@ from django.db import models
 
 
 class MyData(models.Model):
-    SlackUserName = models.CharField(max_length=200, null=True)
-    BackEnd = models.BooleanField(null=True)
-    Age = models.IntegerField(null=True)
-    Bio = models.CharField(max_length=1000, null=True)
+    slackUsername = models.CharField(max_length=200, null=True)
+    backend = models.BooleanField(null=True)
+    age = models.IntegerField(null=True)
+    bio = models.CharField(max_length=1000, null=True)
 
 
 # {
