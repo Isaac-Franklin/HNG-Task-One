@@ -23,8 +23,22 @@ def Home(request, *args, **kwargs):
     operator = info['operation_type']
     if (operator == 'subtraction'):
         solution = (infoX - infoY)
+        data = {
+            "slackUsername": "Isaac Franklin Tochukwu",
+            "operation_type": operator,
+            "result": solution,
+            # "bio": "I joined HNG9 to learn what exactly it takes to be a world-class developer"
+        }
+        return JsonResponse(data, headers=header, safe=False)
     elif (operator == 'addition'):
         solution = (infoX + infoY)
+        data = {
+            "slackUsername": "Isaac Franklin Tochukwu",
+            "operation_type": operator,
+            "result": solution,
+            # "bio": "I joined HNG9 to learn what exactly it takes to be a world-class developer"
+        }
+        return JsonResponse(data, headers=header, safe=False)
     elif (operator == 'multiplication'):
         solution = (infoX * infoY)
         data = {
