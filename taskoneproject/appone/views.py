@@ -13,7 +13,7 @@ from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework import status
 
-
+# https://franklin007.pythonanywhere.com/addData/
 @api_view(["POST"])
 def Home(request, *args, **kwargs):
     header = {"Access-Control-Allow-Origin": "*"}
@@ -29,7 +29,7 @@ def Home(request, *args, **kwargs):
         solution = (infoX * infoY)
         data = {
             "slackUsername": "Isaac Franklin Tochukwu",
-            "Operation": operator,
+            "operation_type": operator,
             "result": solution,
             # "bio": "I joined HNG9 to learn what exactly it takes to be a world-class developer"
         }
